@@ -9,6 +9,9 @@ on:
 permissions:
     contents: read
 
+env:
+    TF_WORKSPACE: terraform-demo-dev
+
 jobs:
     terraform:
         name: "Terraform"
