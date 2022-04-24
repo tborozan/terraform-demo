@@ -1,31 +1,33 @@
-variable "projectName" {
-  type        = string
-  description = "The name of the project"
-  default     = "terraform-demo"
-}
-
-variable "azureRegion" {
+variable "AZUREREGION" {
   type        = string
   description = "The Azure region"
   default     = "westeurope"
 }
 
-variable "subscriptionId" {
+variable "SUBSCRIPTIONID" {
   type        = string
   description = "The Azure subscription ID"
+  sensitive   = true
+  default     = "$"
 }
 
-variable "tenantId" {
+variable "TENANTID" {
   type        = string
   description = "The Azure tenant ID"
+  sensitive   = true
+  default     = "$"
 }
 
-variable "clientId" {
+variable "CLIENTID" {
   type        = string
   description = "The Azure client ID"
+  sensitive   = true
+  default     = "$"
 }
 
-variable "clientSecret" {
+variable "CLIENTSECRET" {
   type        = string
   description = "The Azure client secret"
+  sensitive   = true
+  default     = "$"
 }
