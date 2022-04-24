@@ -11,6 +11,10 @@ permissions:
 
 env:
     TF_WORKSPACE: terraform-demo-dev
+    TF_VAR_SUBSCRIPTIONID: ${{ secrets.TF_VAR_SUBSCRIPTIONID }}
+    TF_VAR_TENANTID: ${{ secrets.TF_VAR_TENANTID }}
+    TF_VAR_CLIENTID: ${{ secrets.TF_VAR_CLIENTID }}
+    TF_VAR_CLIENTSECRET: ${{ secrets.TF_VAR_CLIENTSECRET }}
 
 jobs:
     terraform:
